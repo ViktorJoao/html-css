@@ -1,0 +1,45 @@
+@charset "UTF-8";
+body{
+    background-color:#44E3D3 ;
+}
+
+
+h1#principal{
+    color:#684b4b ;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+
+
+h1{
+    color: rgb(45, 32, 54);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.basico{
+    background-color:#009688 ;
+    color:#000000 ;
+}
+
+
+.intermediario{
+    background-color:#009688 ;
+}
+
+
+.avancado{
+    background-color: #009688;
+}
+
+
+h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
