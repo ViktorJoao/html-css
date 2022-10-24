@@ -12,34 +12,81 @@
         }
         header{
             background-color: #18929d;
-            padding: 10px 60px;
+            padding: 10px 30px ;
+        }
+        header > h1{
+            font-size: 2.5em;
+            color: white;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.281);
         }
         nav{
             background-color: #18929d;
             text-align: right;
+            padding: 5px;
         }
         nav > a{
             color: white;
             text-decoration: none;
             padding: 10px;
         }
+        nav > a:hover{
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+            transition-duration: 0.2s;
+        }
         #q1{
-            background-image: url('imagem-p.jpg');
-            height: 85vh;
+            background-image: url('pexels-p.jpg');
+            height: 84vh;
+            margin: auto;
+            min-width: 400px;
+            max-width: 900px;
             background-size: cover;
             position: relative;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.514);
         }
         #q2{
             background-color: blanchedalmond;
              
         }
         #titulo{
+            
             color: white;
+            font-size: 1.5em;
             position: absolute;
             left: 50%;
             top: 50%;
 
             transform: translate(-50%, -50%);
+        }
+        #botao{
+            position: absolute;
+            padding: 5px;
+            left: 50%;
+            top: 50%;
+            transform: translate(+20%, +100%);
+            font-size: 1.0em;
+            
+        }
+        #botao2{
+            position: absolute;
+            padding: 5px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-120%, +100%);
+            font-size: 1.0em;
+        }
+        #botao:hover{
+            background-color: transparent;
+            color: white;
+            border: 1px solid transparent;
+            transition-duration: 0.2s;
+        }
+        #botao2:hover{
+            background-color: transparent;
+            color: white;
+            border: 1px solid transparent;
+            transition-duration: 0.2s;
         }
         
     </style>
@@ -57,6 +104,8 @@
         <div id="q1">
             <div id="q2">
                 <h1 id="titulo">Site criado usando apenas HTML & CSS</h1>
+                <button id="botao2">Saiba mais</button>
+                <button id="botao"> Inscrever</button>
             </div>
         </div>
     </section>
