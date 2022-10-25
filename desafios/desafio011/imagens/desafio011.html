@@ -16,39 +16,88 @@
         header{
             background-color: black;
             color: white;
-            padding: 55px;
+            padding: 40px;
             background-attachment: fixed;
         }
         header > h1{
-            font-size: 3em;
+            font-size: 2.6em;
             text-align: center;
             font-family: anton, arial;
         }
         header > p{
             text-align: center;
-            font-size: 1.5em;
+            font-size: 1.3em;
         }
         #container{
             
             height: 400px;
-
             
+            
+            
+        
         }
         #conteudo{
             position: absolute;
             width: 200px;
-            padding: 25px;
+            padding: 50px;
             line-height: 40px;
             font-family: cursive;
             font-size: 1.1em;
             
             
         }
+        
         #flor{
-            width: ;
-            height: 500px;
+            background-image:url('background001.png'); 
+            height: 98vh;
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: cover;
+            
+
             
         }
+        .texto{
+            background-color: transparent;
+            position: absolute;
+            width: 200px;
+            padding: 50px;
+            line-height: 40px;
+            font-family: cursive;
+            font-size: 1.4em;
+            color: white;
+            
+            
+            
+        }
+        .p{
+            width: 200px;
+            height: 700px;
+            line-height: 40px;
+            padding: 40px;
+            font-size: 1.4em;
+            
+            
+        }
+        #foto2{
+            height: 100vh;
+            background-image: url('background002.jpg');
+        }
+        #p2{
+            background-color: rgba(0, 0, 0, 0.356);
+            width: 200px;
+            height:400px ;
+            padding: 40px;
+            line-height: 40px;
+            font-size: 1.4em;
+            color: white;
+            
+            
+        }
+        
+        
+
+        
         
          
     </style>
@@ -58,9 +107,9 @@
         <h1>Cordel Moderno</h1>
         <p>Por Milton Duarte</p>
     </header>
-    <section id="container">
+    <section class="fixo" id="container">
         <div id="conteudo">
-            <p>Estou ficando cansado
+            <p >Estou ficando cansado
                 Da tal tecnologia
                 Só se fala por e-mail
                 Mensagem curta e fria
@@ -72,8 +121,43 @@
             
         
     </section>
-    <div id="flor">
+   <section class="fixo" id="flor">
+    <p class="texto" id="tx">Não é mais como era antes
+        É tudo abreviado
+        "Você" só tem duas letras
+        O "O" e o "E" foi riscado
+        Para declarar o amor
+        Basta botar uma flor
+        E um coração desenhado.</p>
+   </section>
+   <section class="p">
+    <p>Arroba agora não pesa
+        É parte de um endereço
+        Ponto final nem se usa
+        Ou vai até no começo
+        Agora é .com
+        Se o saite é muito bom
+        Ele vale um alto preço.</p><br>
+        <p>Arroba agora não pesa
+            É parte de um endereço
+            Ponto final nem se usa
+            Ou vai até no começo
+            Agora é .com
+            Se o saite é muito bom
+            Ele vale um alto preço.</p>
+   </section>
+   <section id="foto2">
+    <p id="p2">Tenho saudade das cartas
+        Escritas com a própria mão
+        Mandava no mês de Junho
+        Só chegava no Verão
+        Mas matava a saudade
+        Era texto de verdade
+        Nas linhas do coração.</p>
+   </section>
+   
+    
 
-    </div>
+   
 </body>
 </html>
