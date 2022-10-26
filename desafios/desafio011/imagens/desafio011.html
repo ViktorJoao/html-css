@@ -7,12 +7,16 @@
     <title>Cordel</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
         *{
             margin: 0px;
             padding: 0px;
         }
-        
+        body{
+            
+            min-width: 300px;
+        }        
         header{
             background-color: black;
             color: white;
@@ -23,76 +27,112 @@
             font-size: 2.6em;
             text-align: center;
             font-family: anton, arial;
+            text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.288);
         }
         header > p{
             text-align: center;
             font-size: 1.3em;
         }
+        header > p > a{
+            text-decoration: none;
+            color: white;
+        }
+        header > p > a:hover{
+            
+            color: rgba(255, 255, 255, 0.747);
+        }
         #container{
             
-            height: 400px;
-            
-            
-            
-        
+            height: 150px;
+              
         }
-        #conteudo{
-            position: absolute;
-            width: 200px;
-            padding: 50px;
-            line-height: 40px;
-            font-family: cursive;
-            font-size: 1.1em;
-            
-            
-        }
-        
-        #flor{
-            background-image:url('background001.png'); 
-            height: 98vh;
-            background-attachment: fixed;
-            background-position: center center;
-            background-size: cover;
-            
+        #p1{
 
-            
-        }
-        .texto{
-            background-color: transparent;
             position: absolute;
             width: 200px;
-            padding: 50px;
+            height: 400px;
+            padding: 30px;
+            margin-bottom: 100px;
             line-height: 40px;
             font-family: cursive;
-            font-size: 1.4em;
-            color: white;
+            font-size: 1.4em; 
+            font-family: 'Lobster', cursive;
             
-            
-            
-        }
-        .p{
-            width: 200px;
-            height: 700px;
-            line-height: 40px;
-            padding: 40px;
-            font-size: 1.4em;
-            
-            
-        }
-        #foto2{
-            height: 100vh;
-            background-image: url('background002.jpg');
         }
         #p2{
             background-color: rgba(0, 0, 0, 0.356);
+            background-position: center center;
             width: 200px;
-            height:400px ;
-            padding: 40px;
+            height: 320px;
+            margin: 40px 40px;
+            
+           
             line-height: 40px;
             font-size: 1.4em;
             color: white;
-            
-            
+            font-family: 'Lobster', cursive;
+        }
+        #p3{
+            width: 200px;
+            height: 400px;
+            line-height: 40px;
+            margin: 40px;
+            font-size: 1.4em;   
+            font-family: 'Lobster', cursive;         
+        }
+        #p5{
+            background-color: rgba(0, 0, 0, 0.356);
+            height: auto;
+            width: 200px;
+            margin-left: 20px;
+            padding: auto;
+            margin-top: 300px;
+            line-height: 40px;
+            font-size: 1.4em;
+            color: white;       
+            font-family: 'Lobster', cursive;    
+        }
+        #p6{
+            width: 200px;
+            height: auto;
+            line-height: 40px;           
+            font-size: 1.4em;
+            margin: 40px;
+            font-family: 'Lobster', cursive;
+        }      
+        #foto1{
+            background-image:url('background001.png'); 
+            height: 98vh;
+            height: 450px;
+            margin-top: 250px;
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: cover;     
+        }
+        #foto2{
+            height: 98vh;
+            height: 450px;
+            background-image: url('background002.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            margin-bottom: 20px;
+        }
+        footer{
+            padding: 10px;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        footer > p > a{
+            text-decoration: none;
+            color: white;
+        }
+        footer > p > a:hover{
+            background-color: white;
+            color: black;
+            padding: 3px;
+            border-radius: 3px;
+            transition-duration: 0.2s;
         }
         
         
@@ -105,11 +145,10 @@
 <body>
     <header>
         <h1>Cordel Moderno</h1>
-        <p>Por Milton Duarte</p>
+        <p>Por <a href="https://www.recantodasletras.com.br/autor_textos.php?id=9806" target="_blank">Milton Duarte</a></p>
     </header>
     <section class="fixo" id="container">
-        <div id="conteudo">
-            <p >Estou ficando cansado
+            <p id="p1">Estou ficando cansado
                 Da tal tecnologia
                 Só se fala por e-mail
                 Mensagem curta e fria
@@ -117,20 +156,22 @@
                 Antes que eu caduque
                 Vou dizer tudo em poesia.</p>
 
-            </div>
+            
             
         
     </section>
-   <section class="fixo" id="flor">
-    <p class="texto" id="tx">Não é mais como era antes
+   <section id="foto1">
+    
+    <p id="p2">Não é mais como era antes
         É tudo abreviado
         "Você" só tem duas letras
         O "O" e o "E" foi riscado
         Para declarar o amor
         Basta botar uma flor
         E um coração desenhado.</p>
+       
    </section>
-   <section class="p">
+   <section id="p3">
     <p>Arroba agora não pesa
         É parte de um endereço
         Ponto final nem se usa
@@ -147,7 +188,7 @@
             Ele vale um alto preço.</p>
    </section>
    <section id="foto2">
-    <p id="p2">Tenho saudade das cartas
+    <p id="p5">Tenho saudade das cartas
         Escritas com a própria mão
         Mandava no mês de Junho
         Só chegava no Verão
@@ -155,6 +196,28 @@
         Era texto de verdade
         Nas linhas do coração.</p>
    </section>
+   <section id="p6">
+    <p>Agora, escrevo e envio
+        Chegando na mesma hora
+        Mas quando vou prosear
+        A pessoa foi embora
+        Abriu outro aplicativo
+        O mundo ficou cativo
+        Da tecnologia do agora.</p>
+        <br>
+        <p>Felizmente, pra orar
+            Não precisa de internet
+            Deus escuta todo mundo
+            Se quiser, faça esse teste
+            Dois pontos são dois joelhos
+            Seus lábios são aparelhos
+            Deixe que Deus interprete.</p>
+   </section>
+   <footer>
+
+    <p>Site criado por <a href="https://www.instagram.com/" target="_blank">João Viktor</a>, 
+         Aluno do <a href="https://www.youtube.com/cursoemvideo/playlists" target="_blank">Curso em Video</a></p>
+   </footer>
    
     
 
