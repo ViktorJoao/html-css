@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    background-color: gray;
+    min-height: 60vh;
+}
+section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.imagem{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    height: 97vh;
+}
+.normal{
+    background-color: rgb(220, 231, 243);
+}
+.imagem > h2{
+    background-color: rgba(0, 0, 0, 0.267);
+    display: inline-block;
+    color: white;
+    font-size: 10vw;
+    padding: 3px;
+    font-variant: small-caps;
+}
+.imagem > #img01{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#img1{
+    background-image: url('../foto-1.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#img2{
+    background-image: url('../foto-2.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#img3{
+    background-image: url('../foto-3.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.imagem > #img02{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.imagem > #img03{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.imagem > #img01{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+h3{
+    text-align: center;
+    font-variant: small-caps;
+}
+#p1{
+    line-height: 2em;
+    text-align: justify;
+    font-size: 3vw;
+}
+#p2{
+    line-height: 2em;
+    text-align: justify;
+    font-size: 3vw;
+}
+#p3{
+    line-height: 2em;
+    text-align: justify;
+    font-size: 3vw;
+}
+footer{
+    background-color: white;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 5px;
+}
+footer > p > a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+footer > p > a:hover{
+    text-decoration: underline;
+}
+
+
