@@ -1,4 +1,11 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
+
+:root{
+    --font01:'Passion One', cursive;
+    --font02:'Fasthand', cursive;
+}
 
 *{
     margin: 0px;
@@ -16,6 +23,8 @@ header{
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-size: 10vw;
+    font-family: var(--font01);
 }
 header > p{
     padding-bottom: 50px;
@@ -34,6 +43,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-size: 3.6vw;
+    font-family: var(--font02);
 }
 .normal{
     background-color: white;
@@ -45,7 +56,7 @@ section{
 }
 .imagem > p{
     background-color: rgba(0, 0, 0, 0.151);
-    width: 300px;
+    display: inline-block;
 }
 
 footer{
