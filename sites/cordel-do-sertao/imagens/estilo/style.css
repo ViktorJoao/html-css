@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+*{
+    margin: 0PX;
+    padding: 0PX;
+}
+html, body{
+    background-color: cadetblue;
+    min-height: 100vh;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 6.5vw;
+}
+header > p{
+    padding-bottom: 50px;
+}
+header > p > a{
+    text-decoration: none;
+    color: white;
+}
+header > p > a:hover{
+    text-decoration: underline;
+}
+section{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 2em;
+    font-size: 4vw;
+    padding-left: 30px;
+    
+}
+section.principal{
+   background-color: white;
+}
+section.segunda{
+    background-image: url(../por-do-sol-1.jpg);
+    background-position: bottom left;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 90vh;
+    color: white;
+    
+}
+section.quarta{
+    background-image: url('../por-do-sol2.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+#primeiro-paragrafo{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.185);
+    
+}
+#quarto-paragrafo{
+    color: white;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.459);
+}
+footer{
+    background-color: rgb(141, 153, 165)153, 165;
+    text-align: center;
+    padding: 5px;
+}
+footer > strong:hover{
+    color: rgb(46, 28, 28);
+    text-decoration: underline;
+}
