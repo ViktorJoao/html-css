@@ -12,6 +12,7 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
@@ -20,9 +21,26 @@
         .num{
             text-align: right;
         }
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         thead{
             background-color: gray;
             color: white;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(54, 52, 52);
+        }
+        tbody > tr:nth-child(even){
+            background-color: rgb(209, 194, 194);
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            
         }
         #foote{
             background-color: gray;
@@ -33,10 +51,11 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>Populaçao das unidades federativas</caption>
         <thead>
             <tr>
-                <th>estado</th>
-                <th>populaçao</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 70px;">Populaçao</th>
             </tr>
         </thead>
 
@@ -153,10 +172,32 @@
 
         <tfoot>
             <tr id="foote">
-                <th>total de habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>000000,00</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, repudiandae dolor. Reiciendis, sint molestias numquam dicta accusamus dolor mollitia omnis delectus autem. Et neque vitae iste quas blanditiis voluptate nulla!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere corporis perspiciatis, doloribus, odio tempora dolorem ab qui quam, aperiam suscipit enim quia placeat optio non aliquid aut. Magnam, corporis explicabo?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quaerat enim atque at nulla repudiandae, incidunt magni deleniti recusandae repellendus, quos quibusdam voluptas dolorum, ea corrupti ut obcaecati ducimus. Totam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi sed temporibus expedita velit praesentium ad iure mollitia accusamus provident harum, qui corporis aliquid dignissimos rem eligendi adipisci, deleniti porro!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nobis cumque unde sapiente repellendus sint obcaecati at, ipsa illum recusandae dolor inventore sunt exercitationem ipsam modi magni. Architecto, repellat reiciendis?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam est fugiat incidunt quis et maxime consequatur sit, rem aperiam deserunt inventore illo libero tempore quasi excepturi ipsum vel ratione consequuntur.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque saepe autem laborum nulla expedita repellendus magnam molestiae sit at minus? Et molestias deserunt animi rem magni ab error, adipisci quam.
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, repudiandae dolor. Reiciendis, sint molestias numquam dicta accusamus dolor mollitia omnis delectus autem. Et neque vitae iste quas blanditiis voluptate nulla!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere corporis perspiciatis, doloribus, odio tempora dolorem ab qui quam, aperiam suscipit enim quia placeat optio non aliquid aut. Magnam, corporis explicabo?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quaerat enim atque at nulla repudiandae, incidunt magni deleniti recusandae repellendus, quos quibusdam voluptas dolorum, ea corrupti ut obcaecati ducimus. Totam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi sed temporibus expedita velit praesentium ad iure mollitia accusamus provident harum, qui corporis aliquid dignissimos rem eligendi adipisci, deleniti porro!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nobis cumque unde sapiente repellendus sint obcaecati at, ipsa illum recusandae dolor inventore sunt exercitationem ipsam modi magni. Architecto, repellat reiciendis?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam est fugiat incidunt quis et maxime consequatur sit, rem aperiam deserunt inventore illo libero tempore quasi excepturi ipsum vel ratione consequuntur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque saepe autem laborum nulla expedita repellendus magnam molestiae sit at minus? Et molestias deserunt animi rem magni ab error, adipisci quam.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, repudiandae dolor. Reiciendis, sint molestias numquam dicta accusamus dolor mollitia omnis delectus autem. Et neque vitae iste quas blanditiis voluptate nulla!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere corporis perspiciatis, doloribus, odio tempora dolorem ab qui quam, aperiam suscipit enim quia placeat optio non aliquid aut. Magnam, corporis explicabo?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quaerat enim atque at nulla repudiandae, incidunt magni deleniti recusandae repellendus, quos quibusdam voluptas dolorum, ea corrupti ut obcaecati ducimus. Totam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi sed temporibus expedita velit praesentium ad iure mollitia accusamus provident harum, qui corporis aliquid dignissimos rem eligendi adipisci, deleniti porro!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nobis cumque unde sapiente repellendus sint obcaecati at, ipsa illum recusandae dolor inventore sunt exercitationem ipsam modi magni. Architecto, repellat reiciendis?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam est fugiat incidunt quis et maxime consequatur sit, rem aperiam deserunt inventore illo libero tempore quasi excepturi ipsum vel ratione consequuntur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque saepe autem laborum nulla expedita repellendus magnam molestiae sit at minus? Et molestias deserunt animi rem magni ab error, adipisci quam.
+    </p>
 </body>
 </html>

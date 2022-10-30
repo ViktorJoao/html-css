@@ -10,10 +10,25 @@
             width: 500px;
         }
         table{
-            border-collapse: collapse;  
+            border-collapse: collapse; 
+            position: relative;
+             
+        }
+        tbody > tr:nth-child(2n){
+            background-color: rgb(167, 162, 162);
+
+        }
+        thead > tr{
+            background-color: grey;
+        }
+        thead > tr > td{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(0, 0, 0);
+            color: white;
         }
         td{
-            border: 1px solid rgba(0, 0, 0, 0.425);
+            border: 1px solid rgba(26, 24, 24, 0.425);
             padding: 10px;
         }
         .num{
@@ -36,6 +51,7 @@
 <body>
     <h1>Lista de unidades federativas do Brasil por população</h1>
     <table>
+        
     <thead>
         <tr>
             <td>Posiçao</td>
