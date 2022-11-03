@@ -83,29 +83,22 @@ section > p{
     transition: 0.2s;
 }
 footer{
-    width: 100vw;
-    background-position: 200px;
-    background-color: black;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    color: white;
-    text-align: center;
+    
+    padding: 50px;
+    background-color: rgb(35, 35, 68);
+    color: rgb(182, 179, 179);
 }
-footer > p{
-    font-size: 4vw;
+
+footer > nav {
+    columns: 2;
+    
+    
 }
-footer > #paragrafo2 > a:hover{
-    background: linear-gradient(to left, rgba(46, 45, 45, 0.692), white);
-    color: black;
-    padding: 1px;
-    border-radius: 6px;
-}
-footer > #paragrafo2 > a{
+footer > nav > a{
+    color: rgb(148, 142, 142);
+    line-height: 2em;
     text-decoration: none;
-    color: white;
 }
-#paragrafo2{
-    font-size: 5vw;
-    padding-top: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+footer > nav > a:hover{
+    color: white;
 }
