@@ -102,3 +102,10 @@ footer > nav > a{
 footer > nav > a:hover{
     color: white;
 }
+main > a  img{
+    
+    width: 50px;
+    margin: 20px;
+    
+    
+}
