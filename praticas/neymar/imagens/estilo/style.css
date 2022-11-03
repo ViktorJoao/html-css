@@ -102,10 +102,11 @@ footer > nav > a{
 footer > nav > a:hover{
     color: white;
 }
-main > a  img{
-    
+main > section#redes-sociais img{
     width: 50px;
-    margin: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
     
     
 }
+
