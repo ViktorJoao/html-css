@@ -6,20 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulalio002</title>
     <style>
+        body{
+            position: relative;
+            background-color: aquamarine;
+        }
+        h1{
+            text-align: center;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.37);
+        }
         div{
+            position: absolute;
+            width: 250px;
+            
+            border: 1px solid black;
             text-align: center;
             margin: 20px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, 50%);
         }
     </style>
 </head>
 <body>
     <h1>Formulario pratico</h1>
     <form action="cadastro.php">
-        <div><label for="inome">Nome:</label><input type="text" name="nome" id="inome" required size="10" placeholder="n-o-m-e"></div>
-        <div><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome" required size="5" placeholder="s-o-b-r-e-n-o-m-e"></div>
-        <div><label for="isenha">Senha:</label><input type="password" name="senha" id="isenha" required size="10" placeholder="s-e-n-h-a"></div>
-        <div><input type="submit" value="Cadastre-se"></div>
-        <div><input type="reset" value="Redefinir"></div>
+        <div>
+            <p><label for="inome">Nome:</label><input type="text" name="nome" id="inome" required size="10" placeholder="n-o-m-e"></p>
+            <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome" required size="5" placeholder="s-o-b-r-e-n-o-m-e"></p>
+            <p><label for="isenha">Senha:</label><input type="password" name="senha" id="isenha" required size="10" placeholder="s-e-n-h-a"></p>
+            <p><input type="submit" value="Cadastre-se"></p>
+            <p><input type="reset" value="Redefinir"></p>
+        </div>
     </form>
 </body>
 </html>
