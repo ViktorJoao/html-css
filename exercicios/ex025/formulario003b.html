@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            position: relative;
+        }
+        div{
+            padding: 10px;
+            font-weight: bolder;
+        }
+        form{
+            position: absolute;
+            border: 1px solid black;
+            width: 450px;
+            height: 400px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, 50%);
+            box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.637);
+            
+        }
+        h1, h2{
+            text-align: center;
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de Inscrição</h1>
+    <h2>Peencha seu Dados</h2>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <div>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" placeholder="Digite seu Nome" required>
+        </div>
+        <div>
+            <label for="iemail">E-mail:</label>
+            <input type="text" name="email" id="iemail" placeholder="Digite seu E-mail" required>
+        </div>
+        <div>
+            <label for="iendereço">Endereço:</label>
+            <input type="text" name="endereço" id="iendereço" size="40" placeholder="Digite seu endereço" required>
+        </div>
+        <div>
+            <label for="icidade">Cidade:</label>
+            <input type="text" name="cidade" id="icidade" size="42" placeholder="Cidade onde voçe mora" required>
+        </div>
+        <div>
+            <label for="itelefone">Telefone:</label>
+            <input type="number" name="telefone" id="itelefone" placeholder="Tel..." required>
+        </div>
+        <div>
+            <label for="iusuario">Usuario:</label>
+            <input type="text" name="usuario" id="iusuario" placeholder="Nome do usuario" required>
+        </div>
+        <div>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" placeholder="Senha" required>
+        </div>
+        <div>
+            <label for="ihora">Horario da entrevista:</label>
+            <input type="time" name="hora" id="ihora" required>
+        </div>
+        <div>
+            <label for="inascimento">Data de nascimento:</label>
+            <input type="date" name="data" id="inascimento" required>
+        </div>
+        <div>
+            <input type="submit" value="Finalizar minha inscriçao">
+            <input type="reset" value="Nova inscriçao">
+        </div>
+        
+    </form>
+</body>
+</html>
