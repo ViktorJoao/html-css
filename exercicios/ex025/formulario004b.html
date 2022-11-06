@@ -4,9 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formulario</title>
+    <title>Formulario de Cadastro</title>
+    <style>
+        h1{
+            text-align: center;
+            font-variant: small-caps;
+            color: rgb(131, 127, 122);
+        }
+        form{
+            min-width: 300px;
+            max-width: 700px;
+            background-color: rgb(227, 177, 236);
+            margin: auto;
+            padding: 20px;
+            font-weight: bolder;
+            box-shadow: 2px 2px 8px rgb(109, 107, 107);
+            border-radius: 5px;
+        }
+        div{
+            padding: 15px;
+        }
+        #botao1{
+            padding: 10px;
+            margin-right: 20px;
+            border-radius: 0%;
+            background-color: green;
+            color: white;
+        }
+        #botao2{
+            background-color: red;
+            color: white;
+            border-radius: 0%;
+            padding: 10px;
+        }
+        input{
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgb(73, 69, 69);
+            border: 1px solid white;
+        }
+    </style>
 </head>
 <body>
-    <h1>Novo Formulario</h1>
+    <h1>Formulario de Cadastro</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+       
+            <div>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required autocomplete="name">
+            </div>
+            <div>
+                <label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome" required autocomplete="nickname">
+            </div>
+            <div>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail"required autocomplete="email">
+            </div>
+            <div>
+                <label for="isenha">Crie um Senha:</label>
+                <input type="password" name="senha" id="isenha"required>
+            </div>
+            <div>
+                <label for="irepita">Digite de novo:</label>
+                <input type="password" name="senha" id="irepita"required>
+            </div>
+            <div>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="telefone" id="itel"required>
+            </div>
+            <div>
+                
+                <label for="icaixa">Masculino:</label>
+                <input type="checkbox" name="caixa" id="icaixa" required>
+                <label for="icaixa">Feminino:</label>
+                <input type="checkbox" name="caixa" id="icaixa" >
+            </div>
+       
+        <div>
+            <input type="submit" value="Enviar" class="botao" id="botao1">
+            <input type="reset" value="Limpar" class="botao" id="botao2">
+        </div>
+    </form>
 </body>
 </html>
