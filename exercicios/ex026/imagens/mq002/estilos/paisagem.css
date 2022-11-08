@@ -3,7 +3,6 @@
 /*APARELHO DEITADO*/
 
 body{
-    
     background: url('../imagens/cev-landscape.jpg');
-    
+    background-position: top bottom;
 }
