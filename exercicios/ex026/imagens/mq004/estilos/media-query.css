@@ -2,12 +2,31 @@
  /*todas as demais medias*/
 
  @media print {
-
+    *{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5em;
+        color: black;
+    }
+    main{
+        border: 1px solid black;
+    }
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+    
+    #celular{display: none;}
+    #tablet{display: none;}
+    #impressora{display: block;}
+    #pc{display: none;}
+    #tv{display: none;}
  }
  
  @media screen and (min-width:769px) and (max-width:1024px) {
     body{
         background-image: url(../imagens/back-tablet.jpg);
+    }
+    h1{
+        color: black;
     }
     #celular{display: none;}
     #tablet{display: block;}
@@ -15,7 +34,8 @@
     #pc{display: none;}
     #tv{display: none;}
  }
-
+ 
+ 
  @media screen and (min-width:1025px) and (max-width:1200px) {
     body{
         background-image: url(../imagens/icon-pc.png);
