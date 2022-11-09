@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    font-variant: small-caps;
+    padding: 10px;
+    text-shadow: 1px 2px 3px black;
+}
+header > p{
+    padding: 10px;
+    font-variant: small-caps;
+}
+main{
+    background-color: rgb(187, 159, 214);
+    padding: 10px;
+}
+main > section > h2{
+    font-size: 1.2em;
+    text-align: center;
+    padding: 5px;
+}
+.paragrafo{
+    
+    width: 400px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(59, 58, 58, 0.322);
+}
+footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
