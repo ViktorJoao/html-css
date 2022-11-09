@@ -5,6 +5,9 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+body{
+    background-color: antiquewhite;
+}
 header{
     background-color: blueviolet;
     color: white;
@@ -20,28 +23,17 @@ header > p{
     font-variant: small-caps;
 }
 main{
-    background-color: rgb(187, 159, 214);
-    padding: 10px;
-}
-main > section > h2{
-    font-size: 1.2em;
-    text-align: center;
-    padding: 5px;
-}
-.paragrafo{
-    
-    width: 400px;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    background-color: rgba(59, 58, 58, 0.322);
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 20px;
+    margin: auto;
+    line-height: 2em;
 }
 footer{
-    text-align: center;
-    color: white;
-    background-color: black;
+    background-color: violet;
     padding: 20px;
-    font-weight: bolder;
-    font-size: 1.2em;
+    text-align: center;
+    font-size: 1.3em;
+    text-shadow: 1px 0px 1px black;
 }
 
