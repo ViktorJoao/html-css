@@ -5,19 +5,27 @@
         background: linear-gradient(to left, rgb(187, 40, 72), rgb(90, 90, 243));
     }
     #login{
-        width: 700px;
-        height: 500px;
+        width: 70vw;
+        
         background-color: white;
 
     }
     div#h2 > img#imagem{
         margin-left: 80%;
     }
-    section#sessao2{
-        background-color: black;
-        width: 250px;
-        height: 400px;
+
+    section#login > div#img{
+        background: black url('../imagens/fundo.jpg') no-repeat;
+        
+        height: 100vh;
+        float: left;
+        width: 30%;
     }
+    #form{
+        display: block;
+       
+    }
+    
     
     
 }
