@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="img">
+                <!--so pra nao ficar vazio-->
+            </div>
+            <div id="h2">
+                <h2>Login</h2>
+                <img id="imagem" src="imagens/icone-p.jpg" alt="login">
+            </div>
+            
+                
+                    <div id="form">
+                        <form action="cadastro.php" method="post" autocomplete="on">
+                            <div class="caixa">
+                                <label for="iemal">Email:</label><br>
+                                <input type="email" name="email" id="iemail" required size="30px">
+                            </div>
+                            <div class="caixa">
+                                <label for="isenha">Senha:</label><br>
+                                <input type="password" name="senha" id="isenha" required size="30px">
+                            </div>
+                            <div class="caixa" id="botao">
+                                <input id="botao02" type="submit" value="Entrar">
+                            </div>
+                            <div id="link">
+                                <p><a href="#">Esqueceu a senha?</a></p>
+                            </div>
+                        </form>
+                    </div>
+                
+           
+        </section>
+    </main>
+</body>
+</html>
