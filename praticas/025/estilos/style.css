@@ -8,66 +8,34 @@
 header{
     background-color: black;
     color: white;
-    display: flex;
+    display: block;
     padding: 20px 50px;
 }
-header > span{
+header > span#burguer{
     display: block;
-    margin: auto;
+    text-align: center;
     cursor: pointer;
     
 }
-header > span:hover{
+header > span#burguer:hover{
     color: rgb(148, 144, 144);
 }
-main{
-    position: relative;
-    background: grey url('../imagens/fundo.jpg ') no-repeat;
-    background-position: left center;
-    background-size: cover;
-}
-menu{
+header > menu{
     display: none;
-    
-    
-}
-menu > ul > li{
-    background-color: rgb(97, 81, 81);
-    padding: 30px;
     text-align: center;
-    margin: auto;
+    padding: 5px;
+}
+header > menu ul > li{
     list-style: none;
+    padding: 30px;
+
 }
-menu > ul > li > a{
+header > menu > ul > li > a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-menu > ul > li > a:hover{
     color: white;
-    transition: .1s;
+    
+}
+header > menu > ul > li > a:hover {
+    color: rgb(133, 128, 128);
     text-decoration: underline;
-}
-section#links{
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.404);
-    width: 150px;
-    margin: auto;
-}
-section#principal{
-    color: white;  
-    text-align: center;
-    font-size: 2em;  
-    font-variant: small-caps; 
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.253);
-    padding: 15px;
-}
-section#paragrafo{
-    color: white;
-}
-.paragrafos{
-    background-color: rgba(43, 42, 42, 0.164);
-    width: 80vw;
-    margin: auto;
-    padding: 10px;
-    border-radius: 10px;
-    line-height: 2em;
 }
