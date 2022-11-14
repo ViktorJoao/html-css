@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="estilos/style.css">
     <title>Menu</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
 
 
     <header>
@@ -34,6 +34,13 @@
             itens.style.display = 'none'
         }else{
             itens.style.display = 'block'
+        }
+    }
+    function mudouTamanho(){
+        if (window.innerwidth >= 768){
+            itens.style.display = 'block'
+        }else{
+            itens.style.display = 'none'
         }
     }
    </script>
