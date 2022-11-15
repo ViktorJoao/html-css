@@ -10,4 +10,22 @@
     menu > ul > li{
         display: inline-block;
     }
+    section{
+        width: 60vw;
+        font-size: 1.2em;
+    }
+    footer > p{
+        font-size: 1.3em;
+    }
+    #redes-sociais{
+        font-size: 1.3em;
+    }
+    img{
+        width: 50px;
+    }
+    img:hover{
+        transform: translate(-2px, -2px);
+        box-shadow: 1px 1px 10px black;
+        border-radius: 50%;
+    }
 }
