@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <title>Menu</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+            </span>
+        <menu id="lista">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Ajuda</a></li>
+                <li><a href="#">Configuraçoes</a></li>
+                <li><a href="#">Pagina Inicial</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </menu>
+    </header>
+
+        <main>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Harum ex consequatur qui. Excepturi nesciunt in at, sunt
+             nihil minus repudiandae obcaecati quas dolorum odio,
+             molestiae magni laudantium consectetur alias ipsa.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Odit, ea molestiae doloribus rerum architecto beatae sequi
+             reprehenderit quis non. Perferendis dolor alias cumque
+             veniam voluptatum dicta, quasi doloremque fugiat quas?</p>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Harum ex consequatur qui. Excepturi nesciunt in at, sunt
+                nihil minus repudiandae obcaecati quas dolorum odio,
+                molestiae magni laudantium consectetur alias ipsa.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Odit, ea molestiae doloribus rerum architecto beatae sequi
+                reprehenderit quis non. Perferendis dolor alias cumque
+                veniam voluptatum dicta, quasi doloremque fugiat quas?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Harum ex consequatur qui. Excepturi nesciunt in at, sunt
+                    nihil minus repudiandae obcaecati quas dolorum odio,
+                    molestiae magni laudantium consectetur alias ipsa.
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Odit, ea molestiae doloribus rerum architecto beatae sequi
+                    reprehenderit quis non. Perferendis dolor alias cumque
+                    veniam voluptatum dicta, quasi doloremque fugiat quas?</p>
+        </article>
+        
+    </main>
+    
+
+
+    <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                lista.style.display = 'block'
+            } else {
+                lista.style.display = 'none'
+            }
+        }
+        function clickMenu(){
+            if (lista.style.display == 'block'){
+                lista.style.display = 'none'
+            } else {
+                lista.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
