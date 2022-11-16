@@ -16,7 +16,32 @@
     body, html{
         background: linear-gradient(to left, rgb(255, 45, 125), rgb(236, 117, 117));
     }
+    input#botao{
+        margin-left: 15%;
+        width: 100px;
+        margin: auto;
+    }
+   div#link{
+    text-align: center;
+   }
+   form{
+    margin: auto;
+    width: 30vw;
+   }
+   input{
+    width: 320px;
+    padding: 3px;
+   }
+   input#botao{
+    margin-top: 10px;
+    width: 200px;
+    text-align: center;
+   }
 }
+
+
+
+
 @media screen and (min-width:1025px) {
     section{
         width: 70vw;
@@ -33,12 +58,25 @@
     body, html{
         background: linear-gradient(to left, rgb(255, 45, 125), rgb(236, 117, 117));
     }
-    
-    input{
-        width: 300px;
+    input#botao{
+        margin-left: 15%;
+        width: 100px;
+        margin: auto;
     }
-    form{
-        padding-left: 50px;
-    }
-
+   div#link{
+    text-align: center;
+   }
+   form{
+    margin: auto;
+    width: 30vw;
+   }
+   input{
+    width: 320px;
+    padding: 3px;
+   }
+   input#botao{
+    margin-top: 10px;
+    width: 200px;
+    text-align: center;
+   }
 }
