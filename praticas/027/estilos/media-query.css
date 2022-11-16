@@ -5,12 +5,12 @@
         width: 70vw;
     }
     section > div#q1{
-        float: left;
+        float: right;
         width: 30%;
         height: 100%;
     }
     section > div#q2{
-        float: right;
+        float: left;
         width: 65%;
     }
     body, html{
@@ -32,6 +32,13 @@
     }
     body, html{
         background: linear-gradient(to left, rgb(255, 45, 125), rgb(236, 117, 117));
+    }
+    
+    input{
+        width: 300px;
+    }
+    form{
+        padding-left: 50px;
     }
 
 }
