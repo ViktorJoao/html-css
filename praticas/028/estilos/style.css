@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    position: relative;
+    background-color: darkgray;
+}
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+section#login{
+    position: absolute;
+    width: 270px;
+    height: 500px;
+    background-color: rgb(174, 198, 243);
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.39);
+    overflow: hidden;
+    
+    
+}
+section > div#imagem{
+    background: black url('../imagens/fundo.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+    
+}
+section > div#formulario{
+    padding: 10px;
+}
+div{
+    padding: 5px;
+}
+h1{
+    padding-bottom: 40px;
+    text-decoration: underline;
+}
+div#botao{
+    display: block;
+    padding-top: 30px;
+    text-align: center;
+}
+input#entrar{
+    width: 150px;
+    background-color: green;
+    color: white;
+    border: none;
+}
+input#entrar:hover{
+    background-color: rgb(1, 187, 1);
+}
+div#link{
+    padding-top: 30px;
+    text-align: center;
+}
