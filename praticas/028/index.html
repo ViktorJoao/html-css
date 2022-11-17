@@ -17,19 +17,19 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <form action="login.php" method="get" autocomplete="on">
-                    <div>
+                    <div id="email">
                         <span class="material-symbols-outlined">
                             person
                             </span>
                         <label for="iemail"></label>
-                        <input type="password" name="email" id="iemail">
+                        <input type="email" name="email" id="iemail" placeholder="Usuario" autocomplete="on" required>
                     </div>
-                    <div>
+                    <div id="senha">
                         <span class="material-symbols-outlined">
                             vpn_key
                             </span>
                         <label for="isenha"></label>
-                        <input type="password" name="senha" id="isenha">
+                        <input type="password" name="senha" id="isenha" placeholder="Password" autocomplete="current-password"required>
                     </div>
                     <div id="botao">
                         <input id="entrar" type="submit" value="Entrar">

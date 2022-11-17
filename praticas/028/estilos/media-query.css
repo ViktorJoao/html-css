@@ -16,6 +16,27 @@
         float: right;
         width: 60%;
     }
+    div#email{
+        display: block;
+        text-align: center;
+        padding-right: 35px;
+    }
+    div#senha{
+        display: block;
+        text-align: center;
+        padding-right: 35px;
+    }
+    form{
+        margin-top: 10%;
+    }
+    h1{
+        font-size: 1.8em;
+        text-align: right;
+        padding: 30px;
+    }
+    div#link{
+        margin-top: 30%;
+    }
 }
 
 
@@ -35,6 +56,30 @@
     section > div#formulario{
         float: left;
         width: 45%;
+    }
+    div#email{
+        display: block;
+        text-align: center;
+    }
+    div#senha{
+        display: block;
+        text-align: center;
+    }
+    form{
+        display: block;
+        margin-top: 20%;
+        margin-left: 55px;
+    }
+    div#botao{
+        margin-left: 30px;
+    }
+    div#link{
+        margin-top: 20%;
+        margin-left: 8%;
+    }
+    h1{
+        font-size: 2em;
+        padding: 30px;
     }
 }
    
